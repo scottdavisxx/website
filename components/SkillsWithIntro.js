@@ -1,3 +1,5 @@
+import SkillIcon from "./elements/SkillIcon";
+
 const SkillsWithIntro = () => {
   return (
     <div class="logo-grid-with-intro">
@@ -8,7 +10,14 @@ const SkillsWithIntro = () => {
         risus, orci ut a libero. Eu turpis donec sodales egestas facilisi eget aliquet. Orci et 
         curabitur proin.
       </p>
-      <div class="logo-grid">    
+      <div class="logo-grid"> 
+        <SkillIcon />
+        <SkillIcon />
+        <SkillIcon />
+        <SkillIcon />
+        <SkillIcon />
+        <SkillIcon />
+        <SkillIcon />
       </div>
     </div>
   )
