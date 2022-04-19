@@ -26,6 +26,7 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       hero: ['Audiowide', 'sans-serif'],
+      mono: ['Roboto Mono', 'monospace'],
     },
     fontSize: {
       'xs': '.75rem',
