@@ -7,6 +7,6 @@ const ThreeColCards = () => {
       <SkillCard></SkillCard>
       <SkillCard></SkillCard>
     </div>
-  )
-}
+  );
+};
 export default ThreeColCards;
