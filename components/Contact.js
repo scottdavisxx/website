@@ -5,10 +5,10 @@ const Contact = () => {
         <form>
 
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" value=""></input>
+        <input type="text" id="name" name="name" defaultValue={''}></input>
 
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" value=""></input>
+        <input type="email" id="email" name="email" defaultValue={''}></input>
 
         <label htmlFor="subject">Subject:</label>
         <input type="text" id="subject" name="subject"></input>
