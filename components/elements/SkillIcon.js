@@ -1,6 +1,6 @@
 const SkillIcon = () => {
   return (
-    <div className="flex flex-col my-5 w-30">
+    <div className="flex flex-col my-5 w-39">
       <svg
         width="108"
         height="108"
