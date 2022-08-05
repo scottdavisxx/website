@@ -1,6 +1,6 @@
 const HomeFooter = () => {
   return (
-    <footer>
+    <footer className="bg-prim flex flex-row justify-around py-5">
       <div>
         <a href="https://github.com/scottdavisxx">
           <svg
