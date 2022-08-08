@@ -20,7 +20,9 @@ const ThreeColCards = () => {
             </div>
             <div className="mt-2">
               <h3 className="text-white text-4xl">{skillCard.skill}</h3>
-              <p className="text-white text-2xl leading-tight">{skillCard.blurb}</p>
+              <p className="text-white text-2xl leading-tight">
+                {skillCard.blurb}
+              </p>
             </div>
           </div>
         );
