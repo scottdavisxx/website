@@ -8,7 +8,7 @@ const ThreeColCards = () => {
         return (
           <div
             key={skillCard.id}
-            className="border-comp border-2 rounded-xl flex flex-col w-96 my-5 mx-1 px-4 pb-4 border-box"
+            className="border-comp border-2 rounded-xl flex flex-col w-11/12 xl:w-96 my-5 mx-1 px-4 pb-4 border-box"
           >
             <div className="flex self-center my-6">
               <Image
