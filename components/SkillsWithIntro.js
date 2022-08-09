@@ -20,8 +20,8 @@ const SkillsWithIntro = () => {
                 <Image
                   alt="react logo"
                   src={`/${card.image}`}
-                  height="100"
-                  width="100"
+                  height={100}
+                  width={100}
                 ></Image>
                 <h4 className="text-prim-lighter text-4xl font-mono text-center">
                   {card.skill}
