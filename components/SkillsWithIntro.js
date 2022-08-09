@@ -1,4 +1,5 @@
-import SkillIcon from "./elements/SkillIcon";
+import Image from "next/image";
+import { smallCards } from "../data/smallCards";
 
 const SkillsWithIntro = () => {
   return (
@@ -12,13 +13,23 @@ const SkillsWithIntro = () => {
         turpis donec sodales egestas facilisi eget.
       </p>
       <div className="flex flex-row space-x-8 flex-wrap justify-center">
-        <SkillIcon />
-        <SkillIcon />
-        <SkillIcon />
-        <SkillIcon />
-        <SkillIcon />
-        <SkillIcon />
-        <SkillIcon />
+        <div className="flex flex-row px-5 my-5 w-39 flex-wrap justify-center">
+          {smallCards.map((card) => {
+            return (
+              <div key={card.id} className="mx-5">
+                <Image
+                  alt="react logo"
+                  src={`/${card.image}`}
+                  height="100"
+                  width="100"
+                ></Image>
+                <h4 className="text-prim-lighter text-4xl font-mono text-center">
+                  {card.skill}
+                </h4>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
