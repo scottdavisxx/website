@@ -3,7 +3,7 @@ import { card } from "../data/cards";
 
 const ThreeColCards = () => {
   return (
-    <div className="bg-prim flex flex-row justify-center flex-wrap py-5">
+    <div className="bg-prim flex flex-row flex-wrap py-5 justify-evenly">
       {card.map((skillCard) => {
         return (
           <div

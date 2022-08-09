@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="bg-prim-lighter flex flex-col align-center">
-      <h5 className="text-center text-prim-darker text-8xl font-extrabold leading-none">
+      <h5 className="mt-3 text-center text-prim-darker text-5xl xl:text-8xl font-extrabold leading-none">
         Contact Me
       </h5>
       <form className="flex justify-center flex-col self-center w-4/5 items-center">
@@ -46,12 +46,9 @@ const Contact = () => {
           id="message"
         ></textarea>
 
-        <input
-          className="w-1/6 mb-5 bg-comp-light text-2xl rounded-lg py-1"
-          type="submit"
-          id="submit"
-          value="Submit"
-        ></input>
+        <button className="w-fit mb-5 bg-comp-light text-2xl rounded-lg px-3 py-1">
+          Submit
+        </button>
       </form>
     </div>
   );
