@@ -1,11 +1,14 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Hero from '../components/Hero'
 import ThreeColCards from '../components/ThreeColCards.js'
 import SkillsWithIntro from '../components/SkillsWithIntro'
 import Contact from '../components/Contact'
 import HomeFooter from '../components/HomeFooter'
-import Document from './_document'
+import ContactForm from "../components/contact-form";
+
+// import styles from '../styles/Home.module.css'
+// import Document from './_document'
+
 
 export default function Home() {
   return (
@@ -16,7 +19,8 @@ export default function Home() {
       <Hero />
       <ThreeColCards />
       <SkillsWithIntro />
-      <Contact/>
+      {/* <Contact/> */}
+      <ContactForm />
       <HomeFooter />
     </div>
   )
