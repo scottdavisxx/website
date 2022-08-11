@@ -21,7 +21,7 @@ function ContactForm() {
           Name
         </label>
         <input
-          className="w-full mb-5 bg-prim-light"
+          className="w-full mb-5 bg-prim-light text-white"
           type="text"
           id="name"
           name="name"
@@ -31,7 +31,7 @@ function ContactForm() {
           Email:
         </label>
         <input
-          className="w-full mb-5 bg-prim-light"
+          className="w-full mb-5 bg-prim-light text-white"
           type="email"
           id="email"
           name="email"
@@ -41,7 +41,7 @@ function ContactForm() {
           Subject:
         </label>
         <input
-          className="w-full mb-5 bg-prim-light"
+          className="w-full mb-5 bg-prim-light text-white"
           type="text"
           id="subject"
           name="subject"
@@ -53,7 +53,7 @@ function ContactForm() {
         <textarea
           id="message"
           name="message"
-          className="w-full mb-5 bg-prim-light"
+          className="w-full mb-5 bg-prim-light text-white"
           type="text"
         ></textarea>
 
