@@ -10,16 +10,16 @@ import { Navbar } from '../components/Navbar'
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
        <Head>
         <title>Scott Davis</title>
       </Head>
       <Navbar />
       <Hero />
-      <ThreeColCards />
-      <SkillsWithIntro />
-      <Contact />
-      <HomeFooter />
+      <ThreeColCards id="skills" />
+      <SkillsWithIntro id="more-skills" />
+      <Contact id="contact" />
+      <HomeFooter id="social" />
     </div>
   )
 }

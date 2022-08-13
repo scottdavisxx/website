@@ -11,9 +11,9 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap bg-comp p-3 fixed w-full">
+      <nav className="flex items-center flex-wrap bg-comp p-1 fixed w-full">
         <Link href="/">
-          <a>
+          <a className="pl-2">
             <Image alt="temp" src="/bug.svg" height={20} width={20}></Image>
             <span className="text-xl text-prim font-bold ml-1">
               Scott Davis
@@ -61,9 +61,9 @@ export const Navbar = () => {
                 Contact
               </a>
             </Link>
-            <Link href="contact">
+            <Link href="#social">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">
-                Contact
+                Social
               </a>
             </Link>
           </div>

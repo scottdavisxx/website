@@ -1,5 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
-function Contact() {
+function Contact(props) {
   const [state, handleSubmit] = useForm("moqbqvkl");
   if (state.succeeded) {
     return (
@@ -10,7 +10,7 @@ function Contact() {
     );
   }
   return (
-    <div className="bg-prim-lighter flex flex-col align-center">
+    <div id={props.id} className="bg-prim-lighter flex flex-col align-center">
       <h5 className="mt-3 text-center text-prim-darker text-5xl xl:text-8xl font-extrabold leading-none">
         Contact Me
       </h5>

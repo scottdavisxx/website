@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { card } from "../data/cards";
 
-const ThreeColCards = () => {
+const ThreeColCards = ( props ) => {
   return (
-    <div className="bg-prim flex flex-row flex-wrap py-5 justify-evenly">
+    <div id={props.id} className="bg-prim flex flex-row flex-wrap py-5 justify-evenly">
       {card.map((skillCard) => {
         return (
           <div
