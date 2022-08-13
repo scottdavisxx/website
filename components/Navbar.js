@@ -27,7 +27,7 @@ export const Navbar = () => {
           <svg
             className="w-6 h-6"
             fill="none"
-            stroke="currentColor"
+            stroke="#062B74"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -49,7 +49,7 @@ export const Navbar = () => {
             <Link href="#skills">
               <a
                 onClick={handleClick}
-                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white "
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white "
               >
                 Skills
               </a>
@@ -57,7 +57,7 @@ export const Navbar = () => {
             <Link href="#more-skills">
               <a
                 onClick={handleClick}
-                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white"
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white"
               >
                 More Skills
               </a>
@@ -65,7 +65,7 @@ export const Navbar = () => {
             <Link href="#contact">
               <a
                 onClick={handleClick}
-                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white"
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white"
               >
                 Contact
               </a>
@@ -73,7 +73,7 @@ export const Navbar = () => {
             <Link href="#social">
               <a
                 onClick={handleClick}
-                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white"
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white"
               >
                 Social
               </a>
