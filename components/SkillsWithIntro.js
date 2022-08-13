@@ -8,12 +8,11 @@ const SkillsWithIntro = (props) => {
     >
     <span id={props.id} className="-top-20 block relative" ></span>
       <h2 className="text-white text-5xl font-bold my-5">Other Skills</h2>
-      <p className="text-white w-5/6 text-center mb-5 text-2xl">
+      <p className="text-white w-5/6 text-center mb-5 text-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem nec
         dictumst neque, non consectetur vitae porttitor metus, ac. Bibendum eget
         malesuada maecenas volutpat elit. Malesuada gravida egestas lorem dictum
-        parturient eleifend. Aliquet mollis semper risus, orci ut a libero. Eu
-        turpis donec sodales egestas facilisi eget.
+        parturient eleifend.
       </p>
       <div className="flex flex-row space-x-8 flex-wrap justify-center">
         <div className="flex flex-row px-5 my-5 w-39 flex-wrap justify-center">
