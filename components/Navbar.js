@@ -13,7 +13,7 @@ export const Navbar = () => {
     <>
       <nav className="flex items-center flex-wrap bg-comp p-1 fixed w-full z-50">
         <Link href="/">
-          <a className="pl-2">
+          <a className="pl-2" onClick={handleClick}>
             <Image alt="temp" src="/bug.svg" height={20} width={20}></Image>
             <span className="text-xl text-prim font-bold ml-1">
               Scott Davis
@@ -47,22 +47,34 @@ export const Navbar = () => {
           {" "}
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
             <Link href="#skills">
-              <a onClick={handleClick} className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white ">
+              <a
+                onClick={handleClick}
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white "
+              >
                 Skills
               </a>
             </Link>
             <Link href="#more-skills">
-              <a onClick={handleClick} className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white">
+              <a
+                onClick={handleClick}
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white"
+              >
                 More Skills
               </a>
             </Link>
             <Link href="#contact">
-              <a onClick={handleClick} className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white">
+              <a
+                onClick={handleClick}
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white"
+              >
                 Contact
               </a>
             </Link>
             <Link href="#social">
-              <a onClick={handleClick} className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white">
+              <a
+                onClick={handleClick}
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-comp-darker hover:text-white"
+              >
                 Social
               </a>
             </Link>
