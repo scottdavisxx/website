@@ -18,7 +18,7 @@ const SkillsWithIntro = () => {
             return (
               <div key={card.id} className="mx-5">
                 <Image
-                  alt="react logo"
+                  alt={card.skill}
                   src={`/${card.image}`}
                   height={100}
                   width={100}

@@ -4,6 +4,7 @@ import ThreeColCards from '../components/ThreeColCards.js'
 import SkillsWithIntro from '../components/SkillsWithIntro'
 import HomeFooter from '../components/HomeFooter'
 import Contact from "../components/Contact"
+import { Navbar } from '../components/Navbar'
 
 
 
@@ -13,10 +14,11 @@ export default function Home() {
        <Head>
         <title>Scott Davis</title>
       </Head>
+      <Navbar />
       <Hero />
       <ThreeColCards />
       <SkillsWithIntro />
-      <Contact/>
+      <Contact />
       <HomeFooter />
     </div>
   )

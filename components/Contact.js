@@ -3,10 +3,11 @@ function Contact() {
   const [state, handleSubmit] = useForm("moqbqvkl");
   if (state.succeeded) {
     return (
-    <div className="h-48 bg-comp">
-      <h3 className="text-8xl text-center text-prim align-middle">Thanks!</h3>;
-    </div>
-    )
+      <div className="h-48 bg-comp">
+        <h3 className="text-8xl text-center text-prim align-middle">Thanks!</h3>
+        ;
+      </div>
+    );
   }
   return (
     <div className="bg-prim-lighter flex flex-col align-center">
