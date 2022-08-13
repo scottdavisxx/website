@@ -10,7 +10,8 @@ function Contact(props) {
     );
   }
   return (
-    <div id={props.id} className="bg-prim-lighter flex flex-col align-center">
+    <div className="bg-prim-lighter flex flex-col align-center">
+      <span id={props.id} className="-top-20 block relative" ></span>
       <h5 className="mt-3 text-center text-prim-darker text-5xl xl:text-8xl font-extrabold leading-none">
         Contact Me
       </h5>

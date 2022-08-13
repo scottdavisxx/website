@@ -4,9 +4,9 @@ import { card } from "../data/cards";
 const ThreeColCards = (props) => {
   return (
     <div
-      id={props.id}
       className="bg-prim flex flex-row flex-wrap py-5 justify-evenly"
     >
+    <span id={props.id} className="-top-20 block relative" ></span>
       {card.map((skillCard) => {
         return (
           <div
