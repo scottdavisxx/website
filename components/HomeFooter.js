@@ -1,8 +1,11 @@
 import Image from "next/image";
 
-const HomeFooter = ( props ) => {
+const HomeFooter = (props) => {
   return (
-    <footer id={props.id} className="bg-prim flex flex-row justify-around py-5 flex-wrap">
+    <footer
+      id={props.id}
+      className="bg-prim flex flex-row justify-around py-5 flex-wrap"
+    >
       <div>
         <a href="https://github.com/scottdavisxx">
           <Image
