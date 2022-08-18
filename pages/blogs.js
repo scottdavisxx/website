@@ -10,18 +10,20 @@ export default function blogs({ posts }) {
       <title>Scott Davis</title>
     </Head>
     <Navbar />
-    <div className='pt-10 flex flex-wrap w-4/5 self-center'>
-    {posts.map(post => {
-      return (
-        <div key={post.title} className="border-prim border-solid border-2 w-1/4" >
-          <a >
-          <h2 className='text-3xl text-prim'>{post.title}</h2>
-          <p>{post.excerpt}</p>
-        </a>
-        </div>
-        
-      )
-    })}
+    <div className='flex justify-center'>
+      <div className='pt-20 flex flex-wrap w-11/12 self-center flex-row justify-center justify-evenly'>
+      {posts.map(post => {
+        return (
+          <div key={post.title} className="border-prim border-solid border-2 w-1/3 mx-2 my-2" >
+            <a >
+            <h2 className='text-3xl text-prim'>{post.title}</h2>
+            <p>{post.excerpt}</p>
+          </a>
+          </div>
+          
+        )
+      })}
+      </div>
     </div>
   </>
  )
