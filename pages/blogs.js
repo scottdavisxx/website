@@ -20,7 +20,7 @@ export default function blogs({ posts }) {
             <a>
             <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
             <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
-            <p className='mx-3'>{post.excerpt}</p>
+            <p className='mx-3'>{post.blogFields.body}</p>
           </a>
           </div>
           
@@ -40,23 +40,26 @@ export async function getStaticProps() {
 
   const response = await client.query({
     query: gql`
-      query blogs {
-        posts {
-          edges {
-            node {
-              title
-              uri
-              content
-              excerpt
-              featuredImage {
-                node {
-                  mediaItemUrl
-                }
+    query blogs {
+      posts {
+        edges {
+          node {
+            title
+            uri
+            content
+            excerpt
+            featuredImage {
+              node {
+                mediaItemUrl
               }
+            }
+            blogFields {
+              body
             }
           }
         }
       }
+    }
     `,
   })
   
