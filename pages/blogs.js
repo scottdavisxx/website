@@ -15,9 +15,9 @@ export default function blogs({ posts }) {
       {posts.map(post => {
         return (
           <div key={post.title} className="border-prim border-solid border-2 w-1/3 mx-2 my-2" >
-            <a >
-            <h2 className='text-3xl text-prim'>{post.title}</h2>
-            <p>{post.excerpt}</p>
+            <a>
+            <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
+            <p className='mx-3'>{post.excerpt}</p>
           </a>
           </div>
           
