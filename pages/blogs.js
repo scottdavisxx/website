@@ -5,6 +5,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client
 
 
 export default function blogs({ posts }) {
+  console.log('posts', posts)
  return (
   <>
     <Head>
@@ -17,7 +18,7 @@ export default function blogs({ posts }) {
         return (
           <div key={post.title} className="border-prim border-solid border-2 w-1/3 mx-2 my-2" >
             <a>
-            <Image src="https://dev-scottdavisxx.pantheonsite.io/wp-content/uploads/2022/08/code.webp" layout='responsive' width={100} height={65} alt={post.title} />
+            <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
             <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
             <p className='mx-3'>{post.excerpt}</p>
           </a>
