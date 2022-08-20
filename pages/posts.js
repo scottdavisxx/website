@@ -11,20 +11,20 @@ import styles from '../styles/Home.module.css'
 export default function Home({ page, posts }) {
   const { title, description } = page;
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+     <Navbar />
 
       <div className='flex justify-center'>
       <div className='pt-20 flex flex-wrap w-11/12 self-center flex-row justify-center justify-evenly'>
       {posts.map(post => {
         return (
           <div key={post.title} className="border-prim border-solid border-2 w-1/3 mx-2 my-2" >
-            <a>
+            <a href={post.path}>
             <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
             <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
             <p className='mx-3'>{post.blogFields.body}</p>
@@ -37,7 +37,7 @@ export default function Home({ page, posts }) {
     </div>
 
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
        
         <h1 className={styles.title}>{title}</h1>
 
@@ -69,7 +69,9 @@ export default function Home({ page, posts }) {
             </li>
           )}
         </ul>
-      </main>
+      </main> */}
+
+
     </div>
   )
 }
@@ -91,6 +93,7 @@ export async function getStaticProps() {
               uri
               content
               excerpt
+              slug
               featuredImage {
                 node {
                   mediaItemUrl
