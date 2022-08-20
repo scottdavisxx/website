@@ -15,10 +15,13 @@ export default function Post({ post, site }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      
+
       <main className={styles.main}>
         <h1 className={styles.title}>
           { post.title }
         </h1>
+
 
         <div className={styles.grid}>
           <div className={styles.content} dangerouslySetInnerHTML={{
@@ -27,9 +30,9 @@ export default function Post({ post, site }) {
         </div>
 
         <p className={styles.backToHome}>
-          <Link href="/">
+          <Link href="/posts">
             <a>
-              &lt; Back to home
+              &lt; Blogs
             </a>
           </Link>
         </p>
