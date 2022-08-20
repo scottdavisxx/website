@@ -1,14 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { gql } from '@apollo/client';
-
 import { getApolloClient } from '../../lib/apollo-client';
-
-import styles from '../../styles/Home.module.css'
 
 export default function Post({ post, site }) {
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
         <title>{ post.title }</title>
         <meta name="description" content={`Read more about ${post.title} on ${site.title}`} />
@@ -17,26 +14,26 @@ export default function Post({ post, site }) {
 
       
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <div className="">
+        <h1 className="">
           { post.title }
         </h1>
 
 
-        <div className={styles.grid}>
-          <div className={styles.content} dangerouslySetInnerHTML={{
+        <div className="">
+          <div className="" dangerouslySetInnerHTML={{
             __html: post.content
           }} />
         </div>
 
-        <p className={styles.backToHome}>
+        <p className="">
           <Link href="/posts">
             <a>
               &lt; Blogs
             </a>
           </Link>
         </p>
-      </main>
+      </div>
     </div>
   )
 }
