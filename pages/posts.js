@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { gql } from '@apollo/client';
+import {Navbar} from '../components/Navbar';
 
 import { getApolloClient } from '../lib/apollo-client';
 
@@ -15,8 +16,9 @@ export default function Home({ page, posts }) {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navbar />
       <main className={styles.main}>
+       
         <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>{ description }</p>
