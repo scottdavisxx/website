@@ -6,8 +6,6 @@ import Image from 'next/image';
 
 import { getApolloClient } from '../lib/apollo-client';
 
-import styles from '../styles/Home.module.css'
-
 export default function Home({ page, posts }) {
   const { title, description } = page;
   return (
