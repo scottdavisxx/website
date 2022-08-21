@@ -21,7 +21,7 @@ export default function Home({ page, posts }) {
       <div className='pt-20 flex flex-wrap w-11/12 self-center flex-row justify-evenly'>
       {posts.map(post => {
         return (
-          <div key={post.title} className="border-prim border-solid border-2 xl:w-1/4 mx-2 my-2" >
+          <div key={post.title} className="border-prim border-solid border-2 xl:w-1/4 lg:w-1/3 md:w-full mx-2 my-2" >
             <Link href={post.path}>
               <a>
                 <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
