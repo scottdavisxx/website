@@ -22,11 +22,13 @@ export default function Home({ page, posts }) {
       {posts.map(post => {
         return (
           <div key={post.title} className="border-prim border-solid border-2 xl:w-1/4 mx-2 my-2" >
-            <a href={post.path}>
-              <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
-              <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
-              <p className='mx-3 mb-2'>{post.blogFields.body}</p>
-            </a>
+            <Link href={post.path}>
+              <a>
+                <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
+                <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
+                <p className='mx-3 mb-2'>{post.blogFields.body}</p>
+              </a>
+            </Link>
           </div>
           
         )
