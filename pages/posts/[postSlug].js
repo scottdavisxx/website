@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image';
 import { gql } from '@apollo/client';
 import { getApolloClient } from '../../lib/apollo-client';
 import { Navbar } from '../../components/Navbar';
@@ -14,8 +15,8 @@ export default function Post({ post, site }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-        <div className="bg-white mt-8 pt-8 flex flex-col px-12">
-          <div className="flex flex-col mx-12">
+        <div className="bg-white mt-8 pt-8 flex flex-col xl:px-12">
+          <div className="flex flex-col xl:mx-12 mx-4">
             <h1 className="text-4xl text-comp my-1">
               { post.title }
             </h1>
@@ -23,9 +24,10 @@ export default function Post({ post, site }) {
               __html: post.content
             }} />
             </div>
-        <p className="">
+        <p className="text-lg flex">
           <Link href="/posts">
             <a>
+            <Image src="/back-arrow.svg" layout='intrinsic' width={20} height={20} alt='back arrow' />
               Blogs
             </a>
           </Link>
