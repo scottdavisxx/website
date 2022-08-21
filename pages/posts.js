@@ -18,15 +18,15 @@ export default function Home({ page, posts }) {
      <Navbar />
 
       <div className='flex justify-center'>
-      <div className='pt-20 flex flex-wrap w-11/12 self-center flex-row justify-center justify-evenly'>
+      <div className='pt-20 flex flex-wrap w-11/12 self-center flex-row justify-evenly'>
       {posts.map(post => {
         return (
           <div key={post.title} className="border-prim border-solid border-2 w-1/3 mx-2 my-2" >
             <a href={post.path}>
-            <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
-            <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
-            <p className='mx-3'>{post.blogFields.body}</p>
-          </a>
+              <Image src={post.featuredImage.node.mediaItemUrl} layout='responsive' width={100} height={65} alt={post.title} />
+              <h2 className='text-3xl text-prim mx-3'>{post.title}</h2>
+              <p className='mx-3 mb-2'>{post.blogFields.body}</p>
+            </a>
           </div>
           
         )
@@ -106,8 +106,6 @@ export async function getStaticProps() {
       }
     `,
   });
-
-
 
   const posts = data?.data.posts.edges.map(({ node }) => node).map(post => {
     return {

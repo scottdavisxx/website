@@ -2,34 +2,31 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { gql } from '@apollo/client';
 import { getApolloClient } from '../../lib/apollo-client';
+import { Navbar } from '../../components/Navbar';
 
 export default function Post({ post, site }) {
   return (
-    <div className="">
+  
+    <div className="flex">
       <Head>
         <title>{ post.title }</title>
         <meta name="description" content={`Read more about ${post.title} on ${site.title}`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      
-
-      <div className="">
-        <h1 className="">
-          { post.title }
-        </h1>
-
-
-        <div className="">
-          <div className="" dangerouslySetInnerHTML={{
-            __html: post.content
-          }} />
-        </div>
-
+      <Navbar />
+        <div className="bg-white mt-8 pt-8 flex flex-col px-12">
+          <div className="flex flex-col mx-12">
+            <h1 className="text-4xl text-comp my-1">
+              { post.title }
+            </h1>`
+            <div className="" dangerouslySetInnerHTML={{
+              __html: post.content
+            }} />
+            </div>
         <p className="">
           <Link href="/posts">
             <a>
-              &lt; Blogs
+              Blogs
             </a>
           </Link>
         </p>

@@ -46,7 +46,7 @@ export const Navbar = () => {
         >
           {" "}
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-            <Link href="#skills">
+            <Link href="/#skills">
               <a
                 onClick={handleClick}
                 className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white "
@@ -54,7 +54,7 @@ export const Navbar = () => {
                 Skills
               </a>
             </Link>
-            <Link href="#more-skills">
+            <Link href="/#more-skills">
               <a
                 onClick={handleClick}
                 className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white"
@@ -62,7 +62,7 @@ export const Navbar = () => {
                 More Skills
               </a>
             </Link>
-            <Link href="#contact">
+            <Link href="/#contact">
               <a
                 onClick={handleClick}
                 className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white"
@@ -70,12 +70,20 @@ export const Navbar = () => {
                 Contact
               </a>
             </Link>
-            <Link href="#social">
+            <Link href="/#social">
               <a
                 onClick={handleClick}
                 className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white"
               >
                 Social
+              </a>
+            </Link>
+            <Link href="/posts">
+              <a
+                onClick={handleClick}
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white "
+              >
+                Blog
               </a>
             </Link>
           </div>
