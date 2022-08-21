@@ -12,9 +12,7 @@ const MyTracks = () => {
           <p className="text-comp-lighter mt-4 mb-1 flex-end">4:55</p>
         </div>
         <div className="flex flex-row justify-between border-b border-comp-lighter">
-          <p className="text-comp-lighter mt-4 mb-1 flex-start">
-            It's About Time
-          </p>
+          <p className="text-comp-lighter mt-4 mb-1 flex-start">It&aposs About Time</p>
           <p className="text-comp-lighter mt-4 mb-1 flex-end">3:49</p>
         </div>
         <div className="flex flex-row justify-between border-b border-comp-lighter">

@@ -33,43 +33,6 @@ export default function Home({ page, posts }) {
       })}
       </div>
     </div>
-
-
-      {/* <main className={styles.main}>
-       
-        <h1 className={styles.title}>{title}</h1>
-
-        <p className={styles.description}>{ description }</p>
-
-        <ul className={styles.grid}>
-          {posts && posts.length > 0 && posts.map(post => {
-            return (
-              <li key={post.slug} className={styles.card}>
-                <Link href={post.path}>
-                  <a>
-                    <h3 dangerouslySetInnerHTML={{
-                      __html: post.title
-                    }} />
-                  </a>
-                </Link>
-                <div dangerouslySetInnerHTML={{
-                  __html: post.excerpt
-                }} />
-              </li>
-            );
-          })}
-
-          {!posts || posts.length === 0 && (
-            <li>
-              <p>
-                Oops, no posts found!
-              </p>
-            </li>
-          )}
-        </ul>
-      </main> */}
-
-
     </div>
   )
 }
