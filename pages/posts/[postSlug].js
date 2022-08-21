@@ -18,7 +18,7 @@ export default function Post({ post, site }) {
           <div className="flex flex-col mx-12">
             <h1 className="text-4xl text-comp my-1">
               { post.title }
-            </h1>`
+            </h1>
             <div className="" dangerouslySetInnerHTML={{
               __html: post.content
             }} />
