@@ -6,7 +6,7 @@ import { getApolloClient } from '../../lib/apollo-client';
 import { Navbar } from '../../components/Navbar';
 
 export default function Post({ post, site }) {
-  console.log(post, 'post');
+  // console.log(post, 'post');
   return (
     <div className="flex pb-8">
       <Head>
