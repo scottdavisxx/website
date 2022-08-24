@@ -7,7 +7,6 @@ function ContactNetlify(props) {
       </h5>
       <form
         data-netlify="true"
-        action="/"
         name="contact"
         method="POST"
         className="flex justify-center flex-col self-center w-4/5 items-center"
