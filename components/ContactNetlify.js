@@ -9,7 +9,7 @@ function ContactNetlify(props) {
         Contact Me
       </h5>
       <form
-        name="contact" className="flex justify-center flex-col self-center w-4/5 items-center"
+        name="contact" method="POST" className="flex justify-center flex-col self-center w-4/5 items-center"
       >
         <label className="text-prim-darker self-start" htmlFor="name">
           Name
