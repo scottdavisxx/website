@@ -12,6 +12,8 @@ function ContactNetlify(props) {
         method="POST"
         className="flex justify-center flex-col self-center w-4/5 items-center"
       >
+        <input type="hidden" name="form-name" value="contact" />
+
         <label className="text-prim-darker self-start" htmlFor="name">
           Name
         </label>
