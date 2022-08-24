@@ -5,6 +5,7 @@ import SkillsWithIntro from '../components/SkillsWithIntro'
 import HomeFooter from '../components/HomeFooter'
 import Contact from "../components/Contact"
 import { Navbar } from '../components/Navbar'
+import ContactNetlify from '../components/ContactNetlify'
 
 
 
@@ -18,7 +19,7 @@ export default function Home() {
       <Hero />
       <ThreeColCards id="skills" />
       <SkillsWithIntro id="more-skills" />
-      <Contact id="contact" />
+      <ContactNetlify id="contact" />
       <HomeFooter id="social" />
     </>
   )
