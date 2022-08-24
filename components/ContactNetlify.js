@@ -1,15 +1,15 @@
-
-
 function ContactNetlify(props) {
-
   return (
-    <div className="bg-prim-lighter flex flex-col align-center netlify">
+    <div className="bg-prim-lighter flex flex-col align-center">
       <span id={props.id} className="-top-20 block relative"></span>
       <h5 className="mt-3 text-center text-prim-darker text-5xl xl:text-8xl font-extrabold leading-none">
         Contact Me
       </h5>
       <form
-        name="contact" method="POST" className="flex justify-center flex-col self-center w-4/5 items-center"
+        data-netlify="true"
+        name="contact"
+        method="POST"
+        className="flex justify-center flex-col self-center w-4/5 items-center"
       >
         <label className="text-prim-darker self-start" htmlFor="name">
           Name
