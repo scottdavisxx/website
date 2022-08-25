@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="flex flex-col bg-prim-light justify-center pt-16 xl:pt-5 pb-5">
-      <h1 className="ml-3 sm:ml-16 sm:mt-16 font-hero text-8xl xl:text-9xl text-comp-lighter font-bold leading-none">
+      <h1 className="ml-3 sm:ml-16 sm:mt-16 font-hero text-8xl xl:text-9xl text-comp-lighter font-bold leading-none min-h-fit">
         Scott Davis
       </h1>
       <h2 className="text-comp-lighter text-center text-4xl my-4 font-bold leading-none mt-6 w-11/12 self-center">
