@@ -3,18 +3,21 @@ export const card = [
     id: 1,
     skill: "React",
     image: "./react.svg",
-    blurb: "Pellentesque habitant morbi tristique senectus et netus. Quo usque tandem abutere, Catilina, patientia nostra? Paullum deliquit, ponderibus modulisque suis ratio utitur.",
+    blurb:
+      "React is my frontend framework of choice. I have experience desinging and building scalable and responsive React applications from the ground up. Whether it's Vite or NextJS I am at home building apps with React.",
   },
   {
     id: 2,
-    skill: "JavaScript",
-    image: "./js.svg",
-    blurb: "Phasellus laoreet lorem vel dolor tempus vehicula. Unam incolunt Belgae, aliam Aquitani, tertiam. Nec dubitamus multa iter quae et nos invenerat. Gallia est omnis divisa in par.",
+    skill: "TypeScript",
+    image: "./ts.svg",
+    blurb:
+      " I use TypeScript because it elevates code quality by catching type-related bugs before they become runtime issues. TypeScript enhances my daily workflow by providing powerful code editor features and robust refactoring tools.",
   },
   {
     id: 3,
-    skill: "Professional",
+    skill: "Leadership",
     image: "./suit.svg",
-    blurb: "Magna pars studiorum, prodita quaerimus. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    blurb:
+      "As a Development Experience Manager for a team of over 40 developers I have years of experience leading teams of various sizes. As a Developer Lead I have lead development of several large custom websites.",
   },
 ];
