@@ -78,14 +78,6 @@ export const Navbar = () => {
                 Social
               </a>
             </Link>
-            <Link href="/posts">
-              <a
-                onClick={handleClick}
-                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-prim font-bold items-center justify-center hover:bg-comp-dark hover:text-white "
-              >
-                Blog
-              </a>
-            </Link>
           </div>
         </div>
       </nav>
