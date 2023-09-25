@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image';
-import { gql } from '@apollo/client';
-import { getApolloClient } from '../../lib/apollo-client';
 import { Navbar } from '../../components/Navbar';
 
 export default function Post({ post, site }) {
