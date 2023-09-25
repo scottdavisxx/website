@@ -5,7 +5,7 @@ const Hero = () => {
         Scott Davis
       </h1>
       <h2 className="text-comp-lighter text-center text-4xl my-4 font-bold leading-none mt-6 w-11/12 self-center">
-        I'm a passionate Software Developer with years of experience building Web Apps and large websites.
+        I&apos;m a passionate Software Developer with years of experience building Web Apps and large websites.
       </h2>
       <p className="w-4/5 self-center text-comp-lighter text-center text-xl my-4 font-semibold">
         I love learning new technologies, working with colleagues and clients, and most of all building things!

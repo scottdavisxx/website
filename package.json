@@ -10,9 +10,7 @@
     "format": "prettier --write \"components/**/*.{js,jsx}\""
   },
   "dependencies": {
-    "@apollo/client": "^3.8.4",
     "@tailwindcss/forms": "^0.5.6",
-    "graphql": "^16.8.1",
     "next": "12.1.5",
     "postcss-cli": "^10.1.0",
     "react": "18.0.0",
