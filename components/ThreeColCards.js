@@ -20,7 +20,7 @@ const ThreeColCards = (props) => {
               ></Image>
             </div>
             <div className="mt-2">
-              <h3 className="text-white text-4xl">{skillCard.skill}</h3>
+              <h3 className="text-white text-4xl mb-4">{skillCard.skill}</h3>
               <p className="text-white text-2xl leading-tight">
                 {skillCard.blurb}
               </p>
