@@ -14,7 +14,7 @@ export const Navbar = () => {
       <nav className="flex items-center flex-wrap bg-comp p-1 fixed w-full z-50">
         <Link href="/">
           <a className="pl-2">
-            <Image alt="temp" src="/bug.svg" height={20} width={20}></Image>
+            {/* <Image alt="temp" src="/bug.svg" height={20} width={20}></Image> */}
             <span className="text-xl text-prim font-bold ml-1">
               Scott Davis
             </span>
