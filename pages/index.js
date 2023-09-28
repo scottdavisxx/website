@@ -5,7 +5,7 @@ import SkillsWithIntro from "../components/SkillsWithIntro";
 import HomeFooter from "../components/HomeFooter";
 import { Navbar } from "../components/Navbar";
 import ContactNetlify from "../components/ContactNetlify";
-import CssScott from "../components/CssScott";
+import ScottGpt from "../components/ScottGpt";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <title>Scott Davis</title>
       </Head>
       <Navbar />
-      <CssScott />
+      <ScottGpt />
       <Hero />
       <ThreeColCards id="skills" />
       <SkillsWithIntro id="more-skills" />
